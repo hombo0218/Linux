@@ -1,0 +1,140 @@
+/* ベーススタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* コンテナ中央揃え */
+.container {
+    width: 100%;
+    max-width: 90%; /* 最大幅を800pxに変更 */
+    padding: 10%;    /* パディングを広げて内部の余白を増やす */
+    background: rgba(132, 170, 196, 0.418);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトルの装飾 */
+h1 {
+    font-size: 2.4rem;  /* フォントサイズを大きく */
+    text-align: center;
+    position: relative;
+    padding: 1rem 2rem calc(1rem + 8px);
+    background: #fff;
+    margin-top: -3%; /* 追加: 上のマージンで少し上げる */
+}
+h1:before {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border: 4px solid #f7e711;
+
+}
+
+/* フォーム要素のスタイル */
+.form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,a.btn,button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-border-shadow--radius {
+  border-radius: 100vh;
+}
+a.btn-border-shadow {
+    padding: calc(1.5rem - 12px) 3rem 1.5rem;
+    background: #fff;
+    margin-top: 35px; /* 追加: 上のマージンで少し下げる */
+}
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+a.btn-border-shadow--radius:before {
+  border-radius: 100vh;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+.div form-group{
+    text-align: center;
+    width:500px;
+}
+.text-center{
+    margin-top: 140px;
+  }

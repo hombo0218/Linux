@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブックマーク管理ツール</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="bookmark.js"></script>
+</head>
+<body>
+    <div class="container">
+            <h1>ブックマーク管理ツール</h1>
+
+        <form id="bookmarkForm" class="form">
+            <div class="form-group">
+                <label for="url">URL</label>
+                <input type="url" id="url" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="title">タイトル</label>
+                <input type="text" id="title" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="description">説明</label>
+                <textarea id="description" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tags">タグ（カンマ区切り）</label>
+                <input type="text" id="tags" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="category">カテゴリ</label>
+                <select id="category" class="form-control">
+                    <option value="未分類">未分類</option>
+                    <option value="新規作成">新規作成</option>
+                    <option value="仕事">仕事</option>
+                    <option value="趣味">趣味</option>
+                    <option value="学習">学習</option>
+                </select>
+            </div>
+            <!-- <button type="submit" class="btn btn-border"><span>登録</span></button> -->
+            <a href="" class="btn btn-border-shadow btn-border-shadow--radius">登録する</a>
+        </form>
+
+
+    </div>
+</body>
+</html>
